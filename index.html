@@ -5,16 +5,19 @@
     <script defer src="LoadTexts.js"></script>
     <script defer src="mechanics.js"></script>
     <style>
+      html, body {margin: 0; height: 100%; overflow: hidden}
         html{
           margin: 0px;
           height: 100%;
+          min-height: 100%;
           width: 100%;
+          padding: 0;
         }
         body{
             height: 100%;
             width: 100%;
             margin:0px;
-            background:darkslategray;
+            background:rgb(23, 66, 40,1);
         }
         .scanline {
 	        width: 100%;
@@ -32,16 +35,16 @@
           animation: scanline 10s linear infinite;
           }
 
-        .printPanel{
-            color: rgb(202, 202, 202);
+       #printPanel{
+            color: rgb(240, 240, 240);
             height: 72%;
-            width: 60%;
+            width: 90%;
             font-family: "VT323", monospace;
-            font-size: 50px;
+            font-size: 30px;
             margin:5%;
             border-color: rgba(0, 0, 0, 0);
             border-radius: 5px;
-            text-shadow: 0 0 5px #c8c8c8;
+            text-shadow: 0 0 11px #c8c8c8;
             line-height: 1.8rem;
         }
         
@@ -64,10 +67,10 @@
             padding: 10px;
             bottom: 5%;
             font-family: "VT323", monospace;
-            font-size: 50px;
+            font-size: 30px;
             margin:1%;
-            text-shadow: 0 0 5px #c8c8c8;
-            line-height: 1.8rem;
+            text-shadow: 0 0 11px #c8c8c8a3;
+            line-height: 5rem;
         }
         #GFG_Button{
             display: none;
@@ -77,9 +80,8 @@
   </head>
   <body>
     <div class="scanline"></div>
-    <div class="printPanel"> 
-        <p class="yes"></p>
-    </div>
+    <p id="printPanel"></p>
+
     <input class="textClass" id="textId" type="text" name="firstname" value="">
   <button id="GFG_Button" onclick="buttonCode() ">Submit </button>
 
