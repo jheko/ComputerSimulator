@@ -11,7 +11,7 @@ var keypressed=document.getElementById("GFG_Button");
 
 window.onload = function(){
   
-  var lengthOfName = "skata"
+  var lengthOfName = "waiting command to proceed updating...(Y/N)"
 
   document.getElementById('printPanel').innerHTML = lengthOfName;
 };
@@ -20,11 +20,11 @@ var Slash="/";
 function CommandCheck(verb,noum){
   if(Slash=splitCom[0]){
         if(verb=Gen_Commands.Com1){
-        console.log("ola kala");}
+        console.log("works flawlessly");}
         
     }
   else{
-    alert("ti koita re malaka");
+    alert("task succesfully failed");
   }
   }
 //Detects the Enter Button
